@@ -1,0 +1,13 @@
+server:
+  port: 7777
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.33.10/myapp?useSSL=false
+    username: app
+    password: Password123@
+  jpa:
+    hibernate:
+      show-sql: true
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
